@@ -1,0 +1,61 @@
+.listing-card-container {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 20rem;
+  align-self: flex-start;
+}
+
+.listing-card-image-container {
+  
+  img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.listing-card-content-container {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.5rem;
+  color: $text-color;
+
+  .house-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    //color: $text-color;
+    color: black;
+  }
+
+  .house-card-detail {
+    
+    p {
+      margin:0;
+    }
+    .price-tag {
+      font-size: 1.5rem;
+    }
+  }
+
+  i {
+    // , fontSize: '16px'
+    font-size: 16px;
+    color: red;
+  }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .listing-card-container {
+      width: 15rem;
+      margin: 0.5rem;
+  }
+}
